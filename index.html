@@ -3,11 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Best CSS</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components\bootstrap\dist\css\bootstrap.css">
+    <link rel="stylesheet" href="bower_components\bootstrap\dist\css\bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/prism.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <textarea name="" rows="30" cols="80" id="cssPlace"></textarea>
+    <div class="page-header header">
+        <h1 class="container">Best CSS
+        <small>Generate random CSS for your webpage.</small>
+        </h1>
+    </div>
+    <div class="container">
+
+        <h3>Output</h3>
+        <pre class="code-block">
+            <code class="language-css"></code>
+        </pre>
+
+        <h3>Settings <span class="glyphicon glyphicon-cog"></span></h3>
+        <div class="settings">
+            <button type="button" class="btn btn-success" id="gen-button" >Generate CSS</button>
+            <div class="input-group col-md-6">
+                <input type="text" class="form-control" placeholder="Required tags" aria-describedby="basic-addon1" id="settings-required-elements">
+                <span class="input-group-addon" id="basic-addon2">Seperated by "," (div,input,h1)</span>
+            </div>
+            <div class="input-group col-md-3">
+                <span class="input-group-addon" id="basic-addon2">Number of elements</span>
+                <input type="text" class="form-control" placeholder="10" aria-describedby="basic-addon1" id="settings-elements">
+            </div>
+            <div class="input-group col-md-3">
+                <span class="input-group-addon" id="basic-addon2">Number of properties</span>
+                <input type="text" class="form-control" placeholder="10" aria-describedby="basic-addon1" id="settings-properties">
+            </div>
+        </div>
+    </div>
+    <div class="page-footer footer">
+        <h2 class="container">Why?
+            <small>Why not?</small>
+        </h2>
+    </div>
+    <script src="bower_components\jquery\dist\jquery.min.js" charset="utf-8"></script>
+    <script src="js/prism.js" charset="utf-8"></script>
     <script src="js/main.js" charset="utf-8"></script>
 </body>
 </html>
